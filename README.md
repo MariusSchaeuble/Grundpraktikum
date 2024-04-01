@@ -20,3 +20,4 @@ It takes an array of measures and an array of the same length with the correspon
 The result will be a string array, that is rounded according to the standards. 
 
 text2
+
