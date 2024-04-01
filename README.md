@@ -18,3 +18,5 @@ You could use unitCol, to add a unit string to your number in an array.
 More advanced is the option roundCol, or it's overlay RC.
 It takes an array of measures and an array of the same length with the corresponding errors. Optional a unit String, and a stretching factor.
 The result will be a string array, that is rounded according to the standards. 
+
+text2
