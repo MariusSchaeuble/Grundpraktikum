@@ -13,8 +13,10 @@ To achieve such a simple usage, the gauss method must be defined in the same fil
 
 #2. LaTeX table
 
-Once calculated, an numpy array can be exportet to a table. The method "latexTable" creates the surrounding syntax for a table. It accepts any number of string arrays, that will be written as cols. To create these, there are several options. 
+Once calculated, a numpy array can be exportet to a table. The method "latexTable" creates the surrounding syntax for a table. It accepts any number of string arrays, that will be written as cols. To create these, there are several options. 
 You could use unitCol, to add a unit string to your number in an array.
 More advanced is the option roundCol, or it's overlay RC.
 It takes an array of measures and an array of the same length with the corresponding errors. Optional a unit String, and a stretching factor.
 The result will be a string array, that is rounded according to the standards. 
+
+text1
