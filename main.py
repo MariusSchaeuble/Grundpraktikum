@@ -33,6 +33,7 @@ plt.rc('text', usetex=True)
 
 
 
+
 def gauss(term):
     ids = identifier(term)
     symbols = []
