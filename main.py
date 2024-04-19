@@ -151,3 +151,16 @@ rounded = RC(100e10*arr1, 50.3e5*arr2, factor=-7)
 
 latexTable(indexCol(4), rounded, unitCol(arr1, 'mV'), unitCol(arr2), nameCol(4))
 
+matrix1 = matrix("""
+1 2 3;
+4 5 6;
+7 8 9
+""")
+
+gr1 = 1
+gr2 = 1
+sigma_gr1 = 1
+sigma_gr2 = 1
+fort = gr1 + gr2
+sigma_fort = gauss("gr1^2 + exp(cos(gr2))")
+
