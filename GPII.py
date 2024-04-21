@@ -116,19 +116,27 @@ def roundCol(vector, errorVector, unitString='', factor=0):
     for i in range(length):
         rounded = roundSci(vector[i], errorVector[i])
         if factor == 0:
-            result.append('(' + rounded[0] + ' \pm ' + rounded[1] + ')' + '\,' + '\mathrm{' + unitString + '}')
+            result.append('(' + rounded[0] + '\\pm ' + rounded[1] + ')' + '\\,' + '\\mathrm{' + unitString + '}')
         else:
             value = float(rounded[0])*math.pow(10, factor)
             valueErrorFormat = '.' + str(max([0, int(rounded[2]) - factor])) + 'f'
             value = format(value, valueErrorFormat)
             error = float(rounded[1])*math.pow(10, factor)
             error = format(error, valueErrorFormat)
-            result.append('(' + value + ' \pm ' + error + ')' + '\,' + '\mathrm{' + unitString + '}')
+            result.append('(' + value + '\\pm ' + error + ')' + '\\,' + '\\mathrm{' + unitString + '}')
     return result
 
 
 def RC(vector, errorVector, unitString='', factor=0):
-    return roundCol(vector, errorVector, unitString, factor)
+    if type(vector) in [float, int]:
+        return roundCol(np.array([vector]), np.array([errorVector]), unitString, factor)
+    else:
+        return roundCol(vector, errorVector, unitString, factor)
+
+
+def RCP(vector, errorVector, unitString='', factor=0):
+    print(RC(vector, errorVector, unitString, factor)[0])
+
 
 
 def nameCol(n):

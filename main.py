@@ -164,3 +164,5 @@ sigma_gr2 = 1
 fort = gr1 + gr2
 sigma_fort = gauss("gr1^2 + exp(cos(gr2))")
 
+latexTable(RC(2, 1))
+RCP(2, 1)
