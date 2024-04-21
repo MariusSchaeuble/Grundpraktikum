@@ -19,4 +19,7 @@ More advanced is the option roundCol, or its overlay RC.
 It takes an array of measures and an array of the same length with the corresponding errors. Optional a unit String, and a stretching factor.
 The result will be a string array, that is rounded according to the standards. 
 
+#3. Matlab:
+
+I implemented a similar functionality in Matlab, however the gauss function requires the connection of Matlab and Maple, to calculate the symbolic derivatives.
 
