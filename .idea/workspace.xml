@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8df68626-98b2-4146-aae3-31d0f13eed3b" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/Grundpraktikum.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Grundpraktikum.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GPII.py" beforeDir="false" afterPath="$PROJECT_DIR$/GPII.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +55,9 @@
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -117,6 +120,10 @@
       <workItem from="1713544081770" duration="544000" />
       <workItem from="1713545989782" duration="10000" />
       <workItem from="1713704241683" duration="1716000" />
+      <workItem from="1713797536329" duration="13000" />
+      <workItem from="1713797565695" duration="2000" />
+      <workItem from="1713797605485" duration="24000" />
+      <workItem from="1713797652229" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
