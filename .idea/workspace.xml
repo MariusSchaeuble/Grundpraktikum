@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8df68626-98b2-4146-aae3-31d0f13eed3b" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/.idea/Grundpraktikum.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Grundpraktikum.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GPII.py" beforeDir="false" afterPath="$PROJECT_DIR$/GPII.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +122,7 @@
       <workItem from="1713797565695" duration="2000" />
       <workItem from="1713797605485" duration="24000" />
       <workItem from="1713797652229" duration="34000" />
+      <workItem from="1713858513877" duration="30000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />

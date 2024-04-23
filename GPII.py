@@ -130,6 +130,16 @@ def roundCol(vector, errorVector, unitString='', factor=0):
 def RC(vector, errorVector, unitString='', factor=0):
     if type(vector) in [float, int]:
         return roundCol(np.array([vector]), np.array([errorVector]), unitString, factor)
+    elif type(vector) is np.matrix:
+        shp = vector.shape
+        if shp[1] == 1:
+            l = vector.shape[0]
+            res = np.ones(l)
+            for i in range(l):
+                res[i] = vector[i, 0]
+        else:
+            print('matrix eingegeben, keine pasende form')
+        return roundCol(res, errorVector, unitString, factor)
     else:
         return roundCol(vector, errorVector, unitString, factor)
 
@@ -160,5 +170,15 @@ def unitCol(vector, unitString='', factor=0):
     return result
 
 
-
+def UC(vector, unitString='', factor=0):
+    if type(vector) is np.matrix:
+        shp = vector.shape
+        if shp[1] == 1:
+            l = vector.shape[0]
+            res = np.ones(l)
+            for i in range(l):
+                res[i] = vector[i, 0]
+        return unitCol(res, unitString, factor)
+    else:
+        return unitCol(vector, unitString, factor)
 
