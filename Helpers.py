@@ -15,7 +15,7 @@ def identifier(string1):
             i = i + l
             res.append(str1)
         i = i+1
-    res = filterVec(res, ["sin", "cos", "tan", "asin", "acos", "exp", "log", "sqrt", "atan", "sinh", "cosh", "tanh"])
+    res = filterVec(res, ["sin", "cos", "tan", "asin", "acos", "exp", "log", "sqrt", "atan", "sinh", "cosh", "tanh", "pi"])
     res = list(dict.fromkeys(res)) #duplikate entfernen
     #i = i+1
     return res
