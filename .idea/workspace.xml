@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8df68626-98b2-4146-aae3-31d0f13eed3b" name="Changes" comment="first commit">
+    <list default="true" id="8df68626-98b2-4146-aae3-31d0f13eed3b" name="Changes" comment="bei roundcol können jetzt einzelne zahlen eingetragen werden, RCP erstellt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GPII.py" beforeDir="false" afterPath="$PROJECT_DIR$/GPII.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +53,9 @@
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -116,7 +117,8 @@
       <workItem from="1713170916648" duration="115000" />
       <workItem from="1713544081770" duration="544000" />
       <workItem from="1713545989782" duration="10000" />
-      <workItem from="1713704241683" duration="1716000" />
+      <workItem from="1713704241683" duration="2183000" />
+      <workItem from="1714207026076" duration="60000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -182,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711986471729</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="bei roundcol können jetzt einzelne zahlen eingetragen werden, RCP erstellt">
+      <option name="closed" value="true" />
+      <created>1713705999880</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713705999880</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +200,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="bei roundcol können jetzt einzelne zahlen eingetragen werden, RCP erstellt" />
+    <option name="LAST_COMMIT_MESSAGE" value="bei roundcol können jetzt einzelne zahlen eingetragen werden, RCP erstellt" />
   </component>
 </project>
