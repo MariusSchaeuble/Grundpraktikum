@@ -6,12 +6,11 @@ from Helpers import identifier, isCharacter
 import math
 from numpy import matrix, array, mean, std, max, linspace, ones, sin, cos, tan, arctan, pi, sqrt, exp
 import matplotlib.pyplot as plt
-from matplotlib.pyplot import plot, show, xlabel, ylabel, legend, title, savefig, errorbar
+from matplotlib.pyplot import plot, show, xlabel, ylabel, legend, title, savefig, errorbar, grid
 import scipy.optimize as opt
 from GPII import *
 from math import sqrt
 pi = math.pi
-
 
 
 plt.rcParams["text.usetex"] = True

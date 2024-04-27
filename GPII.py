@@ -186,3 +186,9 @@ def UC(vector, unitString='', factor=0):
 def rad(grad):
     return 2*np.pi*grad/360
 
+def toArray(array_like_matrix):
+    res = np.ones(len(array_like_matrix))
+    for i in range(len(array_like_matrix)):
+        res[i] = array_like_matrix[i]
+    return res
+
