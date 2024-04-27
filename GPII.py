@@ -128,7 +128,7 @@ def roundCol(vector, errorVector, unitString='', factor=0):
 
 
 def RC(vector, errorVector, unitString='', factor=0):
-    if type(vector) in [float, int]:
+    if type(vector) in [float, int, np.float64]:
         return roundCol(np.array([vector]), np.array([errorVector]), unitString, factor)
     elif type(vector) is np.matrix:
         shp = vector.shape
@@ -145,7 +145,10 @@ def RC(vector, errorVector, unitString='', factor=0):
 
 
 def RCP(vector, errorVector, unitString='', factor=0):
-    print(RC(vector, errorVector, unitString, factor)[0])
+    ausgabe = RC(vector, errorVector, unitString, factor)
+    for i in range(len(ausgabe)):
+        print(ausgabe[i])
+    #print(RC(vector, errorVector, unitString, factor))
 
 
 
