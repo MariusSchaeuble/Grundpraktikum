@@ -182,3 +182,7 @@ def UC(vector, unitString='', factor=0):
     else:
         return unitCol(vector, unitString, factor)
 
+
+def rad(grad):
+    return 2*np.pi*grad/360
+
