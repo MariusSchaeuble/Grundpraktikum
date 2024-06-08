@@ -13,22 +13,8 @@ from math import sqrt
 pi = math.pi
 
 
-plt.rcParams["text.usetex"] = True
-tex_fonts = {
-    # Use LaTeX to write all text
-    "text.usetex": True,
-    "font.family": "serif",
-    # Use 10pt font in plots, to match 10pt font in document
-    "axes.labelsize": 10,
-    "font.size": 10,
-    # Make the legend/label fonts a little smaller
-    "legend.fontsize": 8,
-    "xtick.labelsize": 8,
-    "ytick.labelsize": 8
-}
-
-plt.rcParams.update(tex_fonts)
-plt.rc('text', usetex=True)
+matplotlib.rc('xtick', labelsize=20)
+matplotlib.rc('ytick', labelsize=20)
 
 
 
