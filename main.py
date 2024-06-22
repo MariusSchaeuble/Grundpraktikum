@@ -52,6 +52,52 @@ def gauss(term):
         res += z ** 2
     return math.sqrt(res)
 
+def gaussVec(term):
+    ids = identifier(term)
+    arrays = []
+    for i in range(len(ids)):
+        if isinstance(eval(ids[i]), np.ndarray):
+            arrays.append(ids[i])
+    arrayLength = len(eval(arrays[0]))
+    symbols = []
+    for str1 in ids:
+        symbols.append(sym.sympify(str1))
+    termSymbol = sym.sympify(term)
+    res = []
+    for k in range(arrayLength):
+        values = []
+        for ident in ids:
+            if ident in arrays:
+                exec("values.append(" + ident + "[k]" + ")")
+            else:
+                exec("values.append(" + ident + ")")
+        derivatives = []
+        i = 0
+        while i < len(symbols):
+            r = sym.diff(termSymbol, symbols[i])
+            j = 0
+            while j < len(symbols):
+                r = r.evalf(subs={symbols[j]: values[j]})
+                j += 1
+            derivatives.append(r.evalf())
+            i += 1
+        i = 0
+        sigmaArrays = []
+        for t in range(len(ids)):
+            if isinstance(eval("sigma_" + ids[t]), np.ndarray):
+                sigmaArrays.append(ids[t])
+        while i < len(derivatives):
+            if ids[i] in sigmaArrays:
+                exec("derivatives[i] *= sigma_" + ids[i] + "[k]")
+            else:
+                exec("derivatives[i] *= sigma_" + ids[i])
+            i = i + 1
+        resj = 0
+        for z in derivatives:
+            resj += z ** 2
+        res.append(sqrt(resj))
+    return array(res)
+
 #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 

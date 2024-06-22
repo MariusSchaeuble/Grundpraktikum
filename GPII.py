@@ -147,7 +147,7 @@ def RC(vector, errorVector, unitString='', factor=0):
 def RCP(vector, errorVector, unitString='', factor=0):
     ausgabe = RC(vector, errorVector, unitString, factor)
     for i in range(len(ausgabe)):
-        print("$" + ausgabe[i] + "$")
+        print(ausgabe[i])
     #print(RC(vector, errorVector, unitString, factor))
 
 
