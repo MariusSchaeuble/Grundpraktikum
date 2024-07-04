@@ -4,13 +4,14 @@ import numpy as np
 import sympy as sym
 from Helpers import identifier, isCharacter
 import math
-from numpy import matrix, array, mean, std, max, linspace, ones, sin, cos, tan, arctan, pi, sqrt, exp, arcsin, arccos, arctan2, sinh, cosh, zeros, log
+from numpy import matrix, array, mean, std, max, linspace, ones, sin, cos, tan, arctan, pi, sqrt, exp, arcsin, arccos, arctan2, sinh, cosh, zeros, log, diag, linspace, arange
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import plot, show, xlabel, ylabel, legend, title, savefig, errorbar, grid
 import scipy.optimize as opt
 from GPII import *
 from math import sqrt
 pi = math.pi
+import scipy
 
 
 matplotlib.rc('xtick', labelsize=20)
