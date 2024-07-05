@@ -195,5 +195,11 @@ def toArray(array_like_matrix):
         res[i] = array_like_matrix[i]
     return res
 
+def linspaceM(start=0, num=100, step=1):
+    res = []
+    for i in range(num):
+        res.append(start+step*i)
+    return np.array(res)
+
 
 
